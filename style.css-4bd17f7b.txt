@@ -1,0 +1,44 @@
+:root{--bg:#faf6ef;--ink:#1f1a17;--accent:#b5546b;--alt:#f1e8da;--line:#1f1a1722}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:18px 5vw;position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.logo{font-size:1.6rem;text-decoration:none;font-style:italic}
+.logo small{font-size:.8rem;font-style:normal;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+nav a{margin-left:20px;text-decoration:none;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+nav a:hover{color:var(--accent)}
+section{padding:72px 5vw}
+section>*{max-width:1100px;margin-left:auto;margin-right:auto}
+.alt{background:var(--alt)}
+.center{text-align:center}
+.hero{text-align:center;padding:110px 5vw}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.1;margin:.2em 0}
+.tag{letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;color:var(--accent)}
+.lead{font-size:1.1rem;opacity:.75}
+h2{font-size:2.2rem;text-align:center;margin-bottom:.1em}
+.sub{text-align:center;opacity:.65;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px 24px}
+.item{text-align:center}
+.ph{aspect-ratio:1/1;background:linear-gradient(135deg,#f4d9df,#f1e8da);border-radius:4px;overflow:hidden;margin-bottom:14px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.item h3{font-size:1.2rem;margin:.2em 0}
+.item p{margin:0;font-size:.9rem;opacity:.7}
+.price{display:block;margin-top:6px;color:var(--accent);font-weight:bold}
+.btn{display:inline-block;margin:16px 8px 0;padding:13px 30px;background:var(--ink);color:var(--bg);text-decoration:none;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--ink)}
+#visitanos{text-align:center}
+table{border-collapse:collapse;margin:20px auto;max-width:520px;width:100%}
+td{padding:8px 0;border-bottom:1px solid var(--line);text-align:left}
+td:last-child{text-align:right}
+.rating{font-family:Georgia,serif;font-size:3rem;margin:0}.rating span{font-size:1rem;font-family:Arial}
+blockquote{font-family:Georgia,serif;font-style:italic;font-size:1.3rem;max-width:640px;margin:16px auto}
+footer{text-align:center;padding:28px;font-size:.8rem;opacity:.6}
+@media(max-width:600px){nav a{margin:0 12px 0 0}}
+
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 48px}
+.mblock h3{font-size:1.4rem;border-bottom:1px solid var(--ink);padding-bottom:6px;margin:0 0 4px}
+.mblock .note{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.mblock ul{list-style:none;padding:0;margin:0}
+.mblock li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.mblock li b{font-weight:600;white-space:nowrap}
